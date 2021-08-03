@@ -1,0 +1,453 @@
+
+@import url(../fonts/GothamBook.css);
+@import url(../fonts/GothamBold.css);
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #d1d1d1;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'arial';
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+h1{
+	font-size: 26px;
+}
+h2{
+	font-size: 20px;
+}
+h3{
+	font-size: 18px;
+}
+h4{
+	font-size: 16px;
+}
+h5{
+	font-size: 14px;
+}
+h6{
+	font-size: 12px;
+}
+p{
+	font-family: 'arial';
+	letter-spacing: 2px;
+	font-size: 14px;
+	line-height: 20px;
+}
+a{
+	text-decoration: none;
+	font-family: arial;
+	letter-spacing: 1px;
+}
+span {
+    font-family: 'GothamBook';
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 20px;
+}
+header{
+	position: fixed;
+	width: 100%;
+}
+.header{
+	color: #FFF;
+	background: #0a4661;
+	height: 30px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+.optionsBar{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.optionsBar span {
+    color: #FFF;
+    font-size: 11pt;
+    font-family: 'GothamBook';
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+.photouser {
+    margin-left: 30px;
+    width: 25px;
+    height: 25px;
+}
+.close{
+	width: 25px;
+    height: 25px;
+}
+.optionsBar a {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin-left: 30px;
+}
+nav ul{
+	background: #0078ff;
+	list-style: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+nav ul > li a{
+	position: relative;
+}
+nav a{
+	color: #FFF;
+	display: block;
+	font-size: 10pt;
+	font-family: 'GothamBook';
+	padding: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: background .5s;
+	border-right: 1px solid #0078ff;
+}
+nav .principal > a{
+    background: url(../images/arrow_bottom.png) no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto auto;
+    background-position: 94% center;
+    background-size: 10px;
+}
+nav ul li:hover ul{
+	display: block;
+}
+nav li ul{
+	background: #0078ff;
+	display: none;
+	flex-direction: column;
+	position: absolute;
+	align-items: flex-start;
+	border-radius: 0 0 10px 10px;
+}
+nav li ul a{
+	position: relative;
+	padding: 10px 30px;
+	border-right: initial;
+}
+nav li ul a:hover{
+	background: #3c87dc;
+}
+nav li ul li:last-child{
+	border-radius: 0 0 10px 10px;
+	overflow: hidden;
+}
+#container{
+	padding: 90px 15px 15px;
+}
+/*****************************************************************/
+/*este parte de la oja de estilo pertenece al registrousuario.php*/
+.form_register{
+	width: 450px;
+	margin: auto;
+	margin-top: 20px;
+	
+}
+.form_register h1{
+	color: #3c93b0;
+}
+hr{
+	border: 0;
+	background: #ccc;
+	height: 1px;
+	margin: 10px 0;
+	display: block;
+}
+form{
+	background: #fff;
+	margin: auto;
+	padding: 20px,50px;
+	border: 1px solid #d1d1d1;
+}
+label{
+	display: block;
+	font-size: 12px;
+	font-family: 'GothamBook';
+	margin: 15px auto 5px auto;
+}
+input,select{
+	display: block;
+	width: 100%;
+	font-size: 11px;
+	padding: 5px;
+	border: 1px solid #85929e;
+	border-radius: 5px;
+}
+/*//con esto no se nos duplica el rol del usuario y elimina el primer elemento*/
+.notITEMone option:first-child{
+	display: none;
+}
+.btn_save{
+	font-size: 12px;
+	background: #12a4c6;
+	padding: 10px;
+	color: #fff;
+	letter-spacing: 1px;
+	border: 0;
+	cursor: pointer;
+	margin: 30px auto 15px auto;
+    border-radius: 10px;
+    display: block;
+}
+.alert{
+	width: 100%;
+	background: #c6e07d66;
+	border-radius: 6px;
+	margin: 20px auto;
+}
+.msg_error{
+	color: #FA1A00;
+}
+.msg_save{
+	color: #06B846;
+}
+.alert p{
+	padding: 10px;
+}
+/*estilos de la lista de usuarios***********/
+#container h1{
+	font-size: 35px;
+	display: inline-block;
+}
+.btn_new{
+	display: inline-block;
+	background: #1879E7;
+	color: #fff;
+	padding: 5px 25px;
+	border-radius: 4px;
+	margin: 20px;
+}
+table{
+	border-collapse: collapse;
+	font-size: 16px;
+	font-family: 'arial';
+	width: 100%;
+
+}
+table th{
+	text-align: left;
+	padding: 10px;
+	background: #368FF3;
+	color: #fff;
+}
+/*crear lineas blancas y grises para mejr estetica
+y visualizacion*/
+table tr:nth-child(odd){
+	background: #fff;
+	padding: 10px;
+	
+}
+table tr td{
+	padding: 20px;
+}
+.link_edit{
+	color: #0078FF;
+}
+.link_delete{
+	color: #FE4A31;
+}
+.link_add{
+	color: #00b359;
+}
+.data_delete{
+	text-align: center;
+}
+.data_delete h2{
+	font-size: 12pt;
+	}
+.data_delete span{
+	font-weight: bold;
+	color: #48C9B0;
+	font-size: 12pt;
+}
+.btn_cancel,.btn_ok{
+	width: 124px;
+	background: #3498DB;
+	color: #fff;
+	display: inline-block;
+	padding: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 15px;
+}
+.data_delete form{
+	background: initial;
+	margin: auto;
+	padding: 20px,50px;
+	border: 0;
+}
+/***********Paginador**************/
+.paginador ul{
+	padding: 15px;
+	list-style: none;
+	background: #fff;
+	margin-top: 15px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
+}
+.paginador a,.pageSelected{
+	color: #428bca;
+	border: 1px solid #ddd;
+	padding: 5px;
+	display: inline-block;
+	font-size: 14px;
+	text-align: center;
+	width: 35px;
+}
+.paginador a:hover{
+	background: #ddd;
+}
+.pageSelected{
+	color: #fff;
+	background: #428bca;
+	border: 1px solid #428bca;
+}
+/************estilo del buscador**********/
+.form_search{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	float: right;
+	background: initial;
+	padding: 10px;
+	border-radius: 10px; 
+}
+.form_search .btn_search{
+	background: #1faac8;
+	color: #fff;
+	padding: 0 20px;
+	border: 0;
+	cursor: pointer;
+	margin-left: 10px;
+
+}
+
+/******************estilos de la caja fotos*/
+
+.prevPhoto {
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+    height: 150px;
+    border: 1px solid #CCC;
+    position: relative;
+    cursor: pointer;
+    background: url(../images/uploads/user.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: auto;
+}
+.prevPhoto label{
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.prevPhoto img{
+	width: 100%;
+	height: 100%;
+}
+.upimg, .notBlock{
+	display: none !important;
+}
+.errorArchivo{
+	font-size: 16px;
+	font-family: arial;
+	color: #cc0000;
+	text-align: center;
+	font-weight: bold; 
+	margin-top: 10px;
+}
+.delPhoto{
+	color: #FFF;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	background: red;
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	z-index: 10;
+}
+/************productos*************/
+.img_producto img{
+	width: 80px;
+	height: auto;
+	object-fit: cover;
+	margin: auto;
+ 
+}
+.imgProductoDelete{
+	width: 175px;
+}
+.modal{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0,0,0,0.81);
+	display: none;
+}
+.body_modal{
+	width: 100%;
+	height: 100%;
+	display: -webkit-inline-flex;
+	display: -moz-inline-flex;
+	display: -ms-inline-flex;
+	display: -o-inline-flex;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+.modal h1{
+	color: #0e725d;
+	text-transform: uppercase;
+}
+.modal h2{
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+#form_add_product{
+	width: 400px;
+	text-align: center;
+}
+

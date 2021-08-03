@@ -1,0 +1,67 @@
+/*esta hoja de estilo pertence a la parte del login de acceso al sistema*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h3{
+	font-family: 'Arial';
+	font-size: 25pt;
+	letter-spacing: 1px;
+	width: 100%;
+	background: #000000;
+	padding: 15px;
+	color: #FFF;
+	text-align: center;
+	text-transform: uppercase;
+
+}
+#container{
+	background-image: linear-gradient(to bottom right, #33475b, #0033CC, #FF77CC, rgb(255, 122, 89));
+	width: 100%;
+	height: 100Vh;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+#container form{
+	background: #000fbf;
+	width: 400px;
+	padding: 10px;
+}
+#container form img{
+	margin: 15px auto;
+	text-align: center;
+	display: block;
+}
+#container form input{
+	width: 90%;
+	padding: 5px;
+	font-size: 16pt;
+	display: block;
+	margin: 25px auto;
+	border-radius: 5px;
+	border: 1px solid #EF5E41;
+	text-align: center;
+}
+#container form input[type="submit"]{
+	background: #000000;
+	padding: 10px;
+	color: #FFF;
+	letter-spacing: 1px;
+	border: 0;
+	cursor: pointer;
+
+}
+.alert{
+	font-family: 'Arial';
+	font-size: 25px;
+	text-align: center; 
+	color: darkred;
+}
+/****************************************************************
